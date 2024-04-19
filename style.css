@@ -1,6 +1,12 @@
 
 /* COMPUTER*/
 
+html{
+  overflow: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
 .dashboard {
   flex-direction: column;
   display: flex;
