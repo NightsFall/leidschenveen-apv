@@ -33,16 +33,41 @@ h2 {
 .title {
   text-align: center;
   font-size: clamp(40px, calc(40px + (75 - 40) * ((100vw - 300px) / (1600 - 300))), 75px);
+  font-weight: bolder;
   color: black;
 }
 
 .apv-img {
   width: clamp(200px, calc(200px + (300 - 200) * ((100vw - 300px) / (1600 - 300))), 300px);
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  transition: background-color 0.3s;
+  background-color: black;
+  border-radius: 14px;
+  margin: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: rgba(0,102,255,1);
+}
+
+.selected {
+  background-color: rgba(0,102,255,1);
 }
 
 .apv {
@@ -50,12 +75,4 @@ h2 {
   position: absolute;
   left: 10vw;
   right: 10vw;
-}
-
-@media screen and (max-width: 850px) {
-
-}
-
-@supports (-webkit-touch-callout: none) {
-
 }
