@@ -1,102 +1,56 @@
 
-/* COMPUTER*/
-
-body{
-  overflow: scroll;
-  overflow-y: scroll;
+body {
+  font-family: Helvetica, sans-serif;
 }
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 0;
+}
+
 .dashboard {
   flex-direction: column;
   display: flex;
   width: 100%;
   height: 500px;
   align-items: center;
-  background-color: #73b9ff;
+  background: linear-gradient(180deg, rgba(0,102,255,1) 0%, rgba(255,255,255,1) 100%);
   font-size: large;
   position: fixed;
   top: 0;
   left: 0;
 }
+
 .dashboard-content {
   font-size: 75px;
   color: rgba(255, 255, 255, 0.923);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.APV-img {
+
+.apv-img {
   width: 400px;
   height: auto;
   margin-bottom: 20px;
 }
-.APV-comp {
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  color: black;
-  position: fixed; 
-  margin-top: 630px;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  z-index: 1000; 
-}
 
-/* TELEFOON */
-
-.APV-tel{
-  column-width: 300px;
-  column-gap: 90px;
-  column-count: 8;
-  flex-direction: column;
-  font-family: Helvetica, sans-serif;
-  font-size: 15px;
+.apv {
   color: black;
-  position: fixed; 
-  margin-top: 580px;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  z-index: 1000; 
-}
-.dashboard-tel {
-  visibility: collapse;
-  flex-direction: column;
-  display: flex;
-  width: 100%;
-  height: 400px;
-  align-items: center;
-  background-color: #73b9ff;
-  font-size: large;
+  margin-top: 500px;
   position: fixed;
-  top: 0;
-  left: 0;
-}
-.dashboard-content-tel {
-  font-size: 45px;
-  color: rgba(255, 255, 255, 0.923);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.APV-img-tel {
-  width: 350px;
-  height: auto;
-  margin-bottom: 20px;
+  left: 10vw;
+  right: 10vw;
 }
 
-.APV-tel {
-  visibility: collapse;
-}
-.dashboard-content-text-phone
-{
+@media screen and (max-width: 850px) {
 
 }
 
-@media only screen and (max-width: 768px){
-  .APV-comp {
-    visibility: collapse;
-  }
-  .APV-tel {
-    visibility: visible;
-  }
-  .dashboard{
-    visibility: collapse;
-  }
-  .dashboard-tel{
-    visibility: visible;
-  }
+@supports (-webkit-touch-callout: none) {
+
 }
