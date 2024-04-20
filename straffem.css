@@ -6,12 +6,17 @@
   top: 52vw;
 } 
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .font-normal {
   font-weight: 400;
 }
 
 .straffen {
-  color: black;
+  color: rgb(0, 0, 0);
   margin-left: 10vw;
   margin-right: 10vw;
   margin-top: 10px;
@@ -34,7 +39,7 @@ body {
   height: 550px;
   align-items: center;
   background: linear-gradient(180deg, rgba(0,102,255,1) 0%, rgba(255,255,255,1) 100%);
-  font-size: large;
+  font-size: large; 
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +47,7 @@ body {
 
 .dashboard-content {
   font-size: 75px;
-  color: rgba(0, 0, 0, 0.923);
+  color: rgb(0, 0, 0);
   margin-top: 20px;
 }
 
@@ -74,4 +79,30 @@ body {
 
 .selected {
   background-color: rgba(0,102,255,1);
+}
+
+@media only screen and (max-width: 430px){
+  .body {
+    overflow-x: hidden;
+  }
+  .straffen {
+    left: 1vw;
+    right: 5vw;
+    top: 140vw;
+  }
+  .text2 {
+    left: 5vw;
+    right: 5vw;
+    top: 365vw;
+  }
+  .apv-img {
+    width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .dashboard-content {
+    font-size: 85px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+  }
 }
